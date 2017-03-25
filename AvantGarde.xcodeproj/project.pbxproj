@@ -7,13 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A41656BE1E701D1900BC2077 /* Ipad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A41656BC1E701D1900BC2077 /* Ipad.storyboard */; };
+		A41656CB1E70409800BC2077 /* Reach.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41656CA1E70409800BC2077 /* Reach.swift */; };
+		A41656CF1E704C4B00BC2077 /* login-.png in Resources */ = {isa = PBXBuildFile; fileRef = A41656CE1E704C4B00BC2077 /* login-.png */; };
+		A416A71C1E839703005AAB25 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A416A71B1E839703005AAB25 /* EventKit.framework */; };
 		A41CB9801E6E7ED300E1D96A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41CB97F1E6E7ED300E1D96A /* AppDelegate.swift */; };
-		A41CB9821E6E7ED300E1D96A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41CB9811E6E7ED300E1D96A /* ViewController.swift */; };
 		A41CB9851E6E7ED300E1D96A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A41CB9831E6E7ED300E1D96A /* Main.storyboard */; };
 		A41CB9871E6E7ED300E1D96A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A41CB9861E6E7ED300E1D96A /* Assets.xcassets */; };
 		A41CB98A1E6E7ED300E1D96A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A41CB9881E6E7ED300E1D96A /* LaunchScreen.storyboard */; };
 		A41CB9951E6E7ED300E1D96A /* AvantGardeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41CB9941E6E7ED300E1D96A /* AvantGardeTests.swift */; };
 		A41CB9A01E6E7ED300E1D96A /* AvantGardeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41CB99F1E6E7ED300E1D96A /* AvantGardeUITests.swift */; };
+		A41CB9B01E6EA50600E1D96A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41CB9AF1E6EA50600E1D96A /* RegisterViewController.swift */; };
+		A41CB9B41E6EE3F800E1D96A /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41CB9B31E6EE3F800E1D96A /* DashboardViewController.swift */; };
+		A41D8CDA1E82671F00C18BFA /* Clock.png in Resources */ = {isa = PBXBuildFile; fileRef = A41D8CD91E82671F00C18BFA /* Clock.png */; };
+		A41D8CDC1E82672400C18BFA /* Book.png in Resources */ = {isa = PBXBuildFile; fileRef = A41D8CDB1E82672400C18BFA /* Book.png */; };
+		A41D8CDE1E82672800C18BFA /* Area.png in Resources */ = {isa = PBXBuildFile; fileRef = A41D8CDD1E82672800C18BFA /* Area.png */; };
+		A41D8CE01E82672C00C18BFA /* Gender.png in Resources */ = {isa = PBXBuildFile; fileRef = A41D8CDF1E82672C00C18BFA /* Gender.png */; };
+		A41D8CE21E82673000C18BFA /* Checked.png in Resources */ = {isa = PBXBuildFile; fileRef = A41D8CE11E82673000C18BFA /* Checked.png */; };
+		A41D8CE41E82673400C18BFA /* Downloading.png in Resources */ = {isa = PBXBuildFile; fileRef = A41D8CE31E82673400C18BFA /* Downloading.png */; };
+		A41D8CE61E826D5A00C18BFA /* Bus.png in Resources */ = {isa = PBXBuildFile; fileRef = A41D8CE51E826D5A00C18BFA /* Bus.png */; };
+		A41D8CE81E826F6E00C18BFA /* Speech .png in Resources */ = {isa = PBXBuildFile; fileRef = A41D8CE71E826F6E00C18BFA /* Speech .png */; };
+		A41D8CEA1E826F7900C18BFA /* Check Book.png in Resources */ = {isa = PBXBuildFile; fileRef = A41D8CE91E826F7900C18BFA /* Check Book.png */; };
+		A41D8CEC1E826F7C00C18BFA /* Message .png in Resources */ = {isa = PBXBuildFile; fileRef = A41D8CEB1E826F7C00C18BFA /* Message .png */; };
+		A41D8CEE1E826F7F00C18BFA /* Password.png in Resources */ = {isa = PBXBuildFile; fileRef = A41D8CED1E826F7F00C18BFA /* Password.png */; };
+		A41D8CF01E826F8300C18BFA /* Soccer.png in Resources */ = {isa = PBXBuildFile; fileRef = A41D8CEF1E826F8300C18BFA /* Soccer.png */; };
+		A41D8CF21E82798F00C18BFA /* noticeboard.png in Resources */ = {isa = PBXBuildFile; fileRef = A41D8CF11E82798F00C18BFA /* noticeboard.png */; };
+		A41D8CF61E82A85200C18BFA /* AttendanceReport_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41D8CF51E82A85200C18BFA /* AttendanceReport_ViewController.swift */; };
+		A41D8CF91E82B96200C18BFA /* up.png in Resources */ = {isa = PBXBuildFile; fileRef = A41D8CF81E82B96200C18BFA /* up.png */; };
+		A41D8CFB1E82B96700C18BFA /* down.png in Resources */ = {isa = PBXBuildFile; fileRef = A41D8CFA1E82B96700C18BFA /* down.png */; };
+		A41DFB741E6FD6400055B2C4 /* EZLoadingActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41DFB731E6FD6400055B2C4 /* EZLoadingActivity.swift */; };
+		A41EC0141E740D7F00C8FBB6 /* SAHREDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41EC0131E740D7F00C8FBB6 /* SAHREDViewController.swift */; };
+		A42588DA1E756BE000E26F9C /* AddmissionFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42588D91E756BE000E26F9C /* AddmissionFormViewController.swift */; };
+		A42588DE1E75828000E26F9C /* avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = A42588DD1E75828000E26F9C /* avatar.png */; };
+		A42588E01E75850900E26F9C /* User.png in Resources */ = {isa = PBXBuildFile; fileRef = A42588DF1E75850900E26F9C /* User.png */; };
+		A42588E41E7588A400E26F9C /* Plus-26.png in Resources */ = {isa = PBXBuildFile; fileRef = A42588E31E7588A400E26F9C /* Plus-26.png */; };
+		A42AA0FE1E72C06300D377C4 /* Avant grade logo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A42AA0FD1E72C06200D377C4 /* Avant grade logo.jpeg */; };
+		A42D0C7D1E8104B000A7EC7D /* Expansion_TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42D0C7C1E8104B000A7EC7D /* Expansion_TableViewCell.swift */; };
+		A4B201771E864C2F009F959A /* AdmissionForm_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B201761E864C2F009F959A /* AdmissionForm_ViewController.swift */; };
+		A4CE477A1E7FBA8800CCE586 /* SplashPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CE47791E7FBA8800CCE586 /* SplashPageViewController.swift */; };
+		A4CE477C1E7FBBA100CCE586 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CE477B1E7FBBA100CCE586 /* NotificationViewController.swift */; };
+		A4CE477E1E7FBBD600CCE586 /* notification.png in Resources */ = {isa = PBXBuildFile; fileRef = A4CE477D1E7FBBD600CCE586 /* notification.png */; };
+		A4CE47801E7FBF5100CCE586 /* Arrow-104.png in Resources */ = {isa = PBXBuildFile; fileRef = A4CE477F1E7FBF5100CCE586 /* Arrow-104.png */; };
+		A4CE47821E7FCEC600CCE586 /* MenuButton.png in Resources */ = {isa = PBXBuildFile; fileRef = A4CE47811E7FCEC600CCE586 /* MenuButton.png */; };
+		A4CE47841E7FCF5B00CCE586 /* ManageTeacher_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CE47831E7FCF5B00CCE586 /* ManageTeacher_ViewController.swift */; };
+		A4CE47881E7FD1F600CCE586 /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = A4CE47871E7FD1F600CCE586 /* close.png */; };
+		A4CE478A1E7FD2A300CCE586 /* menuPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CE47891E7FD2A300CCE586 /* menuPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +72,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A41311941E7122A000C7D120 /* AvantGarde.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AvantGarde.entitlements; sourceTree = "<group>"; };
+		A41656BD1E701D1900BC2077 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Ipad.storyboard; sourceTree = "<group>"; };
+		A41656CA1E70409800BC2077 /* Reach.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reach.swift; sourceTree = "<group>"; };
+		A41656CE1E704C4B00BC2077 /* login-.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login-.png"; sourceTree = "<group>"; };
+		A416A71B1E839703005AAB25 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		A41CB97C1E6E7ED300E1D96A /* AvantGarde.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AvantGarde.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A41CB97F1E6E7ED300E1D96A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A41CB9811E6E7ED300E1D96A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A41CB9841E6E7ED300E1D96A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A41CB9861E6E7ED300E1D96A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A41CB9891E6E7ED300E1D96A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +89,41 @@
 		A41CB99B1E6E7ED300E1D96A /* AvantGardeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AvantGardeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A41CB99F1E6E7ED300E1D96A /* AvantGardeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvantGardeUITests.swift; sourceTree = "<group>"; };
 		A41CB9A11E6E7ED300E1D96A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A41CB9AF1E6EA50600E1D96A /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		A41CB9B31E6EE3F800E1D96A /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		A41D8CD91E82671F00C18BFA /* Clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Clock.png; sourceTree = "<group>"; };
+		A41D8CDB1E82672400C18BFA /* Book.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Book.png; sourceTree = "<group>"; };
+		A41D8CDD1E82672800C18BFA /* Area.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Area.png; sourceTree = "<group>"; };
+		A41D8CDF1E82672C00C18BFA /* Gender.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Gender.png; sourceTree = "<group>"; };
+		A41D8CE11E82673000C18BFA /* Checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Checked.png; sourceTree = "<group>"; };
+		A41D8CE31E82673400C18BFA /* Downloading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Downloading.png; sourceTree = "<group>"; };
+		A41D8CE51E826D5A00C18BFA /* Bus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bus.png; sourceTree = "<group>"; };
+		A41D8CE71E826F6E00C18BFA /* Speech .png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Speech .png"; sourceTree = "<group>"; };
+		A41D8CE91E826F7900C18BFA /* Check Book.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Check Book.png"; sourceTree = "<group>"; };
+		A41D8CEB1E826F7C00C18BFA /* Message .png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message .png"; sourceTree = "<group>"; };
+		A41D8CED1E826F7F00C18BFA /* Password.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Password.png; sourceTree = "<group>"; };
+		A41D8CEF1E826F8300C18BFA /* Soccer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Soccer.png; sourceTree = "<group>"; };
+		A41D8CF11E82798F00C18BFA /* noticeboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noticeboard.png; sourceTree = "<group>"; };
+		A41D8CF51E82A85200C18BFA /* AttendanceReport_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttendanceReport_ViewController.swift; sourceTree = "<group>"; };
+		A41D8CF81E82B96200C18BFA /* up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up.png; sourceTree = "<group>"; };
+		A41D8CFA1E82B96700C18BFA /* down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = down.png; sourceTree = "<group>"; };
+		A41DFB731E6FD6400055B2C4 /* EZLoadingActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EZLoadingActivity.swift; sourceTree = "<group>"; };
+		A41EC0131E740D7F00C8FBB6 /* SAHREDViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAHREDViewController.swift; sourceTree = "<group>"; };
+		A42588D91E756BE000E26F9C /* AddmissionFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddmissionFormViewController.swift; sourceTree = "<group>"; };
+		A42588DD1E75828000E26F9C /* avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar.png; sourceTree = "<group>"; };
+		A42588DF1E75850900E26F9C /* User.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = User.png; sourceTree = "<group>"; };
+		A42588E31E7588A400E26F9C /* Plus-26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Plus-26.png"; sourceTree = "<group>"; };
+		A42AA0FD1E72C06200D377C4 /* Avant grade logo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Avant grade logo.jpeg"; sourceTree = "<group>"; };
+		A42D0C7C1E8104B000A7EC7D /* Expansion_TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Expansion_TableViewCell.swift; sourceTree = "<group>"; };
+		A4B201761E864C2F009F959A /* AdmissionForm_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdmissionForm_ViewController.swift; sourceTree = "<group>"; };
+		A4CE47791E7FBA8800CCE586 /* SplashPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashPageViewController.swift; sourceTree = "<group>"; };
+		A4CE477B1E7FBBA100CCE586 /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		A4CE477D1E7FBBD600CCE586 /* notification.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notification.png; sourceTree = "<group>"; };
+		A4CE477F1E7FBF5100CCE586 /* Arrow-104.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Arrow-104.png"; sourceTree = "<group>"; };
+		A4CE47811E7FCEC600CCE586 /* MenuButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MenuButton.png; sourceTree = "<group>"; };
+		A4CE47831E7FCF5B00CCE586 /* ManageTeacher_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManageTeacher_ViewController.swift; sourceTree = "<group>"; };
+		A4CE47871E7FD1F600CCE586 /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
+		A4CE47891E7FD2A300CCE586 /* menuPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = menuPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A416A71C1E839703005AAB25 /* EventKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +152,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A41656C91E703DDA00BC2077 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				A41D8CF81E82B96200C18BFA /* up.png */,
+				A41D8CD81E8266F400C18BFA /* Dashboard_Image */,
+				A4CE47871E7FD1F600CCE586 /* close.png */,
+				A4CE47811E7FCEC600CCE586 /* MenuButton.png */,
+				A4CE477F1E7FBF5100CCE586 /* Arrow-104.png */,
+				A4CE477D1E7FBBD600CCE586 /* notification.png */,
+				A42588E31E7588A400E26F9C /* Plus-26.png */,
+				A42588DF1E75850900E26F9C /* User.png */,
+				A42588DD1E75828000E26F9C /* avatar.png */,
+				A42AA0FD1E72C06200D377C4 /* Avant grade logo.jpeg */,
+				A41656CE1E704C4B00BC2077 /* login-.png */,
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
+		A416A71A1E839703005AAB25 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A416A71B1E839703005AAB25 /* EventKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A41CB9731E6E7ED300E1D96A = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +185,7 @@
 				A41CB9931E6E7ED300E1D96A /* AvantGardeTests */,
 				A41CB99E1E6E7ED300E1D96A /* AvantGardeUITests */,
 				A41CB97D1E6E7ED300E1D96A /* Products */,
+				A416A71A1E839703005AAB25 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,9 +202,22 @@
 		A41CB97E1E6E7ED300E1D96A /* AvantGarde */ = {
 			isa = PBXGroup;
 			children = (
+				A41311941E7122A000C7D120 /* AvantGarde.entitlements */,
 				A41CB97F1E6E7ED300E1D96A /* AppDelegate.swift */,
-				A41CB9811E6E7ED300E1D96A /* ViewController.swift */,
+				A41CB9AF1E6EA50600E1D96A /* RegisterViewController.swift */,
+				A41CB9B31E6EE3F800E1D96A /* DashboardViewController.swift */,
+				A42588D91E756BE000E26F9C /* AddmissionFormViewController.swift */,
+				A4CE47791E7FBA8800CCE586 /* SplashPageViewController.swift */,
+				A4CE477B1E7FBBA100CCE586 /* NotificationViewController.swift */,
+				A4CE47891E7FD2A300CCE586 /* menuPageViewController.swift */,
+				A4B201761E864C2F009F959A /* AdmissionForm_ViewController.swift */,
+				A41D8CF71E82ABF000C18BFA /* SubViewController */,
+				A4CE478B1E7FD2B600CCE586 /* ThirdParty */,
+				A41EC0131E740D7F00C8FBB6 /* SAHREDViewController.swift */,
 				A41CB9831E6E7ED300E1D96A /* Main.storyboard */,
+				A42D0C7C1E8104B000A7EC7D /* Expansion_TableViewCell.swift */,
+				A41656BC1E701D1900BC2077 /* Ipad.storyboard */,
+				A41656C91E703DDA00BC2077 /* Image */,
 				A41CB9861E6E7ED300E1D96A /* Assets.xcassets */,
 				A41CB9881E6E7ED300E1D96A /* LaunchScreen.storyboard */,
 				A41CB98B1E6E7ED300E1D96A /* Info.plist */,
@@ -123,6 +241,45 @@
 				A41CB9A11E6E7ED300E1D96A /* Info.plist */,
 			);
 			path = AvantGardeUITests;
+			sourceTree = "<group>";
+		};
+		A41D8CD81E8266F400C18BFA /* Dashboard_Image */ = {
+			isa = PBXGroup;
+			children = (
+				A41D8CFA1E82B96700C18BFA /* down.png */,
+				A41D8CF11E82798F00C18BFA /* noticeboard.png */,
+				A41D8CEF1E826F8300C18BFA /* Soccer.png */,
+				A41D8CED1E826F7F00C18BFA /* Password.png */,
+				A41D8CEB1E826F7C00C18BFA /* Message .png */,
+				A41D8CE91E826F7900C18BFA /* Check Book.png */,
+				A41D8CE71E826F6E00C18BFA /* Speech .png */,
+				A41D8CE51E826D5A00C18BFA /* Bus.png */,
+				A41D8CE11E82673000C18BFA /* Checked.png */,
+				A41D8CD91E82671F00C18BFA /* Clock.png */,
+				A41D8CDB1E82672400C18BFA /* Book.png */,
+				A41D8CDD1E82672800C18BFA /* Area.png */,
+				A41D8CE31E82673400C18BFA /* Downloading.png */,
+				A41D8CDF1E82672C00C18BFA /* Gender.png */,
+			);
+			name = Dashboard_Image;
+			sourceTree = "<group>";
+		};
+		A41D8CF71E82ABF000C18BFA /* SubViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A4CE47831E7FCF5B00CCE586 /* ManageTeacher_ViewController.swift */,
+				A41D8CF51E82A85200C18BFA /* AttendanceReport_ViewController.swift */,
+			);
+			name = SubViewController;
+			sourceTree = "<group>";
+		};
+		A4CE478B1E7FD2B600CCE586 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				A41DFB731E6FD6400055B2C4 /* EZLoadingActivity.swift */,
+				A41656CA1E70409800BC2077 /* Reach.swift */,
+			);
+			name = ThirdParty;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,7 +350,13 @@
 				TargetAttributes = {
 					A41CB97B1E6E7ED300E1D96A = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = N2DRC7UTFV;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					A41CB98F1E6E7ED300E1D96A = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -232,9 +395,34 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A41D8CF21E82798F00C18BFA /* noticeboard.png in Resources */,
+				A41D8CEA1E826F7900C18BFA /* Check Book.png in Resources */,
+				A41D8CE81E826F6E00C18BFA /* Speech .png in Resources */,
+				A41D8CEE1E826F7F00C18BFA /* Password.png in Resources */,
+				A41D8CE01E82672C00C18BFA /* Gender.png in Resources */,
+				A41D8CE21E82673000C18BFA /* Checked.png in Resources */,
+				A41D8CDA1E82671F00C18BFA /* Clock.png in Resources */,
+				A4CE477E1E7FBBD600CCE586 /* notification.png in Resources */,
+				A41656BE1E701D1900BC2077 /* Ipad.storyboard in Resources */,
+				A42588DE1E75828000E26F9C /* avatar.png in Resources */,
+				A41D8CE41E82673400C18BFA /* Downloading.png in Resources */,
+				A42588E01E75850900E26F9C /* User.png in Resources */,
+				A41D8CE61E826D5A00C18BFA /* Bus.png in Resources */,
+				A41D8CDE1E82672800C18BFA /* Area.png in Resources */,
 				A41CB98A1E6E7ED300E1D96A /* LaunchScreen.storyboard in Resources */,
+				A41D8CF91E82B96200C18BFA /* up.png in Resources */,
 				A41CB9871E6E7ED300E1D96A /* Assets.xcassets in Resources */,
+				A41656CF1E704C4B00BC2077 /* login-.png in Resources */,
+				A41D8CEC1E826F7C00C18BFA /* Message .png in Resources */,
 				A41CB9851E6E7ED300E1D96A /* Main.storyboard in Resources */,
+				A4CE47881E7FD1F600CCE586 /* close.png in Resources */,
+				A41D8CF01E826F8300C18BFA /* Soccer.png in Resources */,
+				A42AA0FE1E72C06300D377C4 /* Avant grade logo.jpeg in Resources */,
+				A41D8CFB1E82B96700C18BFA /* down.png in Resources */,
+				A4CE47801E7FBF5100CCE586 /* Arrow-104.png in Resources */,
+				A41D8CDC1E82672400C18BFA /* Book.png in Resources */,
+				A4CE47821E7FCEC600CCE586 /* MenuButton.png in Resources */,
+				A42588E41E7588A400E26F9C /* Plus-26.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +447,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A41CB9821E6E7ED300E1D96A /* ViewController.swift in Sources */,
+				A4CE47841E7FCF5B00CCE586 /* ManageTeacher_ViewController.swift in Sources */,
+				A4CE477A1E7FBA8800CCE586 /* SplashPageViewController.swift in Sources */,
+				A4CE478A1E7FD2A300CCE586 /* menuPageViewController.swift in Sources */,
+				A41DFB741E6FD6400055B2C4 /* EZLoadingActivity.swift in Sources */,
 				A41CB9801E6E7ED300E1D96A /* AppDelegate.swift in Sources */,
+				A41D8CF61E82A85200C18BFA /* AttendanceReport_ViewController.swift in Sources */,
+				A42588DA1E756BE000E26F9C /* AddmissionFormViewController.swift in Sources */,
+				A41656CB1E70409800BC2077 /* Reach.swift in Sources */,
+				A4B201771E864C2F009F959A /* AdmissionForm_ViewController.swift in Sources */,
+				A4CE477C1E7FBBA100CCE586 /* NotificationViewController.swift in Sources */,
+				A41EC0141E740D7F00C8FBB6 /* SAHREDViewController.swift in Sources */,
+				A41CB9B41E6EE3F800E1D96A /* DashboardViewController.swift in Sources */,
+				A41CB9B01E6EA50600E1D96A /* RegisterViewController.swift in Sources */,
+				A42D0C7D1E8104B000A7EC7D /* Expansion_TableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +496,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		A41656BC1E701D1900BC2077 /* Ipad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A41656BD1E701D1900BC2077 /* Base */,
+			);
+			name = Ipad.storyboard;
+			sourceTree = "<group>";
+		};
 		A41CB9831E6E7ED300E1D96A /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -412,11 +620,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AvantGarde/AvantGarde.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Virendra Maloo (N2DRC7UTFV)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = N2DRC7UTFV;
 				INFOPLIST_FILE = AvantGarde/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sharad.AvantGarde;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sharad.AvantGardeSharad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -424,11 +640,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AvantGarde/AvantGarde.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Virendra Maloo (N2DRC7UTFV)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = N2DRC7UTFV;
 				INFOPLIST_FILE = AvantGarde/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sharad.AvantGarde;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sharad.AvantGardeSharad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -505,6 +729,7 @@
 				A41CB9A61E6E7ED300E1D96A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A41CB9A71E6E7ED300E1D96A /* Build configuration list for PBXNativeTarget "AvantGardeTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +738,7 @@
 				A41CB9A91E6E7ED300E1D96A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A41CB9AA1E6E7ED300E1D96A /* Build configuration list for PBXNativeTarget "AvantGardeUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +747,7 @@
 				A41CB9AC1E6E7ED300E1D96A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
