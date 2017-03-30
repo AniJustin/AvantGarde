@@ -147,17 +147,13 @@ class SAHREDViewController: UIViewController
         morningOfChristmasComponents.day = Int(day)!
         
         let morningOfChristmas = Calendar.current.date(from: morningOfChristmasComponents)!
-        
-        
+
         /***** NSDateFormatter Part *****/
         
         let formatter = DateFormatter()
         formatter.dateStyle = DateFormatter.Style.medium
-        //  formatter.timeStyle = .MediumStyle
-        
         let dateString = formatter.string(from: morningOfChristmas)
-        
-        
+ 
         return dateString
         
     }

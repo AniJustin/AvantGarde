@@ -32,8 +32,17 @@ class ManageTeacher_ViewController: UIViewController,UITableViewDelegate,UITable
         HeaderTableView.layer.borderWidth = 1
         HeaderTableView.layer.borderColor = UIColor(red:222/255.0, green:225/255.0, blue:227/255.0, alpha: 1.0).cgColor
 
+        //Looks for single or multiple taps.
+//        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ManageTeacher_ViewController.dismissKeyboard))
+//    
+//        view.addGestureRecognizer(tap)
     }
     
+    //Calls this function when the tap is recognized.
+//    func dismissKeyboard() {
+//        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+//    //    view.endEditing(true)
+//    }
     
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
         searchActive = true;
@@ -70,13 +79,13 @@ class ManageTeacher_ViewController: UIViewController,UITableViewDelegate,UITable
     }
     func  webServiceCalling()
     {
-        ActivityControllerIndicator.isHidden = false
-        ActivityControllerIndicator.startAnimating()
+//        ActivityControllerIndicator.isHidden = false
+//        ActivityControllerIndicator.startAnimating()
         
    var request = URLRequest(url: URL(string: "http://52.29.203.220/demo/index.php/?parent_api/teacher_list/")!)
         
         request.httpMethod = "POST"
-        let postString = "user_id=5"
+        let postString = "user_id=\(UserId!)"
         
         
         print(postString)
@@ -92,18 +101,19 @@ class ManageTeacher_ViewController: UIViewController,UITableViewDelegate,UITable
             
             
             let responseString = String(data: data, encoding: .utf8)
-            let dict = convertToDictionary(text: responseString!)
+            let dict = self.convertToDictionary(text: responseString!)
             
-            self.ActivityControllerIndicator.isHidden = true
-            self.ActivityControllerIndicator.stopAnimating()
+//            self.ActivityControllerIndicator.isHidden = true
+//            self.ActivityControllerIndicator.stopAnimating()
            
             
             if dict?.index(forKey: "teacherDataArr") != nil {
                 teacherDataArr = dict?["teacherDataArr"] as! NSArray
-              
+                 DispatchQueue.main.async {
                 self.manageteache_TableView.dataSource = self
                 self.manageteache_TableView.delegate = self
                 self.manageteache_TableView.reloadData()
+                }
                 
              
             }
@@ -141,7 +151,7 @@ class ManageTeacher_ViewController: UIViewController,UITableViewDelegate,UITable
     
   
             if(searchActive){
-                if filteredArray != nil
+                if filteredArray.count != 0
                 {
                 let filteredArray_details = filteredArray[row] as! NSDictionary
           
@@ -152,7 +162,7 @@ class ManageTeacher_ViewController: UIViewController,UITableViewDelegate,UITable
         }
             } else {
             
-                if teacherDataArr != nil
+                if teacherDataArr.count != 0
                 {
                     
                     let TeacherFulldetails = teacherDataArr[row] as! NSDictionary
@@ -172,7 +182,9 @@ class ManageTeacher_ViewController: UIViewController,UITableViewDelegate,UITable
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+   
         let cell:Expansion_TableViewCell = tableView.cellForRow(at: indexPath) as! Expansion_TableViewCell
+       
         if(selectedIndex == indexPath.row) {
             selectedIndex = -1
             
@@ -199,74 +211,17 @@ class ManageTeacher_ViewController: UIViewController,UITableViewDelegate,UITable
             return 50;
         }
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+ 
+    @IBAction func BackButton(_ sender: Any) {
+        
+        let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "DashboardViewController") as! DashboardViewController
+        self.navigationController?.pushViewController(secondViewController, animated: false)
     }
     
-}
-//func  webServiceCalling()
-//{
-//    
-//    var request = URLRequest(url: URL(string: "http://52.29.203.220/demo/index.php/?parent_api/teacher_list/")!)
-//    
-//    request.httpMethod = "POST"
-//    let postString = "user_id=5"
-//    
-//    
-//    print(postString)
-//    request.httpBody = postString.data(using: .utf8)
-//    let task = URLSession.shared.dataTask(with: request) { data, response, error in
-//        guard let data = data, error == nil else {                                                 // check for fundamental networking error
-//            print("error=\(error)")
-//            return
-//        }
-//        
-//        if let httpStatus = response as? HTTPURLResponse, httpStatus.statusCode != 600 {           // check for http errors
-//            // print("statusCode should be 200, but is \(httpStatus.statusCode)")
-//            //   print("response = \(response!)")
-//        }
-//        
-//        
-//        let responseString = String(data: data, encoding: .utf8)
-//        print("responseString = \(responseString!)")
-//        
-//        let dict = convertToDictionary(text: responseString!)
-//       // print(dict!)
-//        
-//        
-//        if dict?.index(forKey: "teacherDataArr") != nil {
-//            teacherDataArr = dict?["teacherDataArr"] as! NSArray
-//          //  manageteache_TableView.reloadData()
-//            
-////            for index in 0  ..< teacherDataArr.count
-////                
-////            {
-////            let TeacherFulldetails = teacherDataArr[index] as! NSDictionary
-////                let Teacher_Name = TeacherFulldetails["name"]
-////            print(TeacherFulldetails)
-////          
-//////                var name1 = name[0]
-//////                print(name1)
-////            }
-//            //  let name1 = name["name"] as NSArray
-//            // the key exists in the dictionary
-//        //    print(studentDataArr)
-////            let name1 = name["name"]
-////            print(name1!)
-//        }
-//    }
-//    task.resume()
-//    
-//}
+    
+    
+
+
 func convertToDictionary(text: String) -> [String: Any]? {
     if let data = text.data(using: .utf8) {
         do {
@@ -278,4 +233,10 @@ func convertToDictionary(text: String) -> [String: Any]? {
     return nil
 }
 
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+}
 

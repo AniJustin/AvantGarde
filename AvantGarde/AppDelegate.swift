@@ -9,6 +9,7 @@
 import UIKit
 import UserNotifications
 var ValidateLogin : String!
+
 var ResponsePushNotification : String!
 let app = UIApplication.shared.delegate as! AppDelegate
 

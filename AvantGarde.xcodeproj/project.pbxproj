@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C1D87611E8BA23B0037144A /* Parent_Transport_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1D87601E8BA23B0037144A /* Parent_Transport_ViewController.swift */; };
+		7C1D87631E8BD7B10037144A /* Feedback_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1D87621E8BD7B10037144A /* Feedback_ViewController.swift */; };
+		7C1D87651E8BEC760037144A /* FloatRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1D87641E8BEC760037144A /* FloatRatingView.swift */; };
+		7C23142C1E8AB1DE00D4CEA8 /* Select.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C23142B1E8AB1DE00D4CEA8 /* Select.png */; };
+		7C23142E1E8AB1E600D4CEA8 /* unselect.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C23142D1E8AB1E600D4CEA8 /* unselect.png */; };
+		7C3415C51E8A32CA00CE9203 /* BusDriver_DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3415C41E8A32CA00CE9203 /* BusDriver_DashboardViewController.swift */; };
+		7C3415C71E8A397E00CE9203 /* BusDriver_Attendance_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3415C61E8A397E00CE9203 /* BusDriver_Attendance_ViewController.swift */; };
+		7C3415CB1E8A6BD900CE9203 /* lOGOUT.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7C3415CA1E8A6BD900CE9203 /* lOGOUT.jpeg */; };
 		A41656BE1E701D1900BC2077 /* Ipad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A41656BC1E701D1900BC2077 /* Ipad.storyboard */; };
 		A41656CB1E70409800BC2077 /* Reach.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41656CA1E70409800BC2077 /* Reach.swift */; };
 		A41656CF1E704C4B00BC2077 /* login-.png in Resources */ = {isa = PBXBuildFile; fileRef = A41656CE1E704C4B00BC2077 /* login-.png */; };
@@ -72,6 +80,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7C1D87601E8BA23B0037144A /* Parent_Transport_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parent_Transport_ViewController.swift; sourceTree = "<group>"; };
+		7C1D87621E8BD7B10037144A /* Feedback_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Feedback_ViewController.swift; sourceTree = "<group>"; };
+		7C1D87641E8BEC760037144A /* FloatRatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatRatingView.swift; sourceTree = "<group>"; };
+		7C23142B1E8AB1DE00D4CEA8 /* Select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Select.png; sourceTree = "<group>"; };
+		7C23142D1E8AB1E600D4CEA8 /* unselect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unselect.png; sourceTree = "<group>"; };
+		7C3415C41E8A32CA00CE9203 /* BusDriver_DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusDriver_DashboardViewController.swift; sourceTree = "<group>"; };
+		7C3415C61E8A397E00CE9203 /* BusDriver_Attendance_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusDriver_Attendance_ViewController.swift; sourceTree = "<group>"; };
+		7C3415CA1E8A6BD900CE9203 /* lOGOUT.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lOGOUT.jpeg; sourceTree = "<group>"; };
 		A41311941E7122A000C7D120 /* AvantGarde.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AvantGarde.entitlements; sourceTree = "<group>"; };
 		A41656BD1E701D1900BC2077 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Ipad.storyboard; sourceTree = "<group>"; };
 		A41656CA1E70409800BC2077 /* Reach.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reach.swift; sourceTree = "<group>"; };
@@ -152,10 +168,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C3139E71E88D062002BAA98 /* Parent ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A41CB9B31E6EE3F800E1D96A /* DashboardViewController.swift */,
+				A4B201761E864C2F009F959A /* AdmissionForm_ViewController.swift */,
+				A4CE47831E7FCF5B00CCE586 /* ManageTeacher_ViewController.swift */,
+				A41D8CF51E82A85200C18BFA /* AttendanceReport_ViewController.swift */,
+				7C1D87601E8BA23B0037144A /* Parent_Transport_ViewController.swift */,
+				7C1D87621E8BD7B10037144A /* Feedback_ViewController.swift */,
+			);
+			name = "Parent ViewController";
+			sourceTree = "<group>";
+		};
+		7C3415C31E8A306900CE9203 /* BusDriver ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7C3415C41E8A32CA00CE9203 /* BusDriver_DashboardViewController.swift */,
+				7C3415C61E8A397E00CE9203 /* BusDriver_Attendance_ViewController.swift */,
+			);
+			name = "BusDriver ViewController";
+			sourceTree = "<group>";
+		};
 		A41656C91E703DDA00BC2077 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				7C23142D1E8AB1E600D4CEA8 /* unselect.png */,
+				7C23142B1E8AB1DE00D4CEA8 /* Select.png */,
 				A41D8CF81E82B96200C18BFA /* up.png */,
+				7C3415CA1E8A6BD900CE9203 /* lOGOUT.jpeg */,
 				A41D8CD81E8266F400C18BFA /* Dashboard_Image */,
 				A4CE47871E7FD1F600CCE586 /* close.png */,
 				A4CE47811E7FCEC600CCE586 /* MenuButton.png */,
@@ -204,14 +245,13 @@
 			children = (
 				A41311941E7122A000C7D120 /* AvantGarde.entitlements */,
 				A41CB97F1E6E7ED300E1D96A /* AppDelegate.swift */,
-				A41CB9AF1E6EA50600E1D96A /* RegisterViewController.swift */,
-				A41CB9B31E6EE3F800E1D96A /* DashboardViewController.swift */,
-				A42588D91E756BE000E26F9C /* AddmissionFormViewController.swift */,
 				A4CE47791E7FBA8800CCE586 /* SplashPageViewController.swift */,
+				A41CB9AF1E6EA50600E1D96A /* RegisterViewController.swift */,
 				A4CE477B1E7FBBA100CCE586 /* NotificationViewController.swift */,
 				A4CE47891E7FD2A300CCE586 /* menuPageViewController.swift */,
-				A4B201761E864C2F009F959A /* AdmissionForm_ViewController.swift */,
-				A41D8CF71E82ABF000C18BFA /* SubViewController */,
+				A42588D91E756BE000E26F9C /* AddmissionFormViewController.swift */,
+				7C3139E71E88D062002BAA98 /* Parent ViewController */,
+				7C3415C31E8A306900CE9203 /* BusDriver ViewController */,
 				A4CE478B1E7FD2B600CCE586 /* ThirdParty */,
 				A41EC0131E740D7F00C8FBB6 /* SAHREDViewController.swift */,
 				A41CB9831E6E7ED300E1D96A /* Main.storyboard */,
@@ -264,18 +304,10 @@
 			name = Dashboard_Image;
 			sourceTree = "<group>";
 		};
-		A41D8CF71E82ABF000C18BFA /* SubViewController */ = {
-			isa = PBXGroup;
-			children = (
-				A4CE47831E7FCF5B00CCE586 /* ManageTeacher_ViewController.swift */,
-				A41D8CF51E82A85200C18BFA /* AttendanceReport_ViewController.swift */,
-			);
-			name = SubViewController;
-			sourceTree = "<group>";
-		};
 		A4CE478B1E7FD2B600CCE586 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				7C1D87641E8BEC760037144A /* FloatRatingView.swift */,
 				A41DFB731E6FD6400055B2C4 /* EZLoadingActivity.swift */,
 				A41656CA1E70409800BC2077 /* Reach.swift */,
 			);
@@ -411,6 +443,7 @@
 				A41D8CDE1E82672800C18BFA /* Area.png in Resources */,
 				A41CB98A1E6E7ED300E1D96A /* LaunchScreen.storyboard in Resources */,
 				A41D8CF91E82B96200C18BFA /* up.png in Resources */,
+				7C23142E1E8AB1E600D4CEA8 /* unselect.png in Resources */,
 				A41CB9871E6E7ED300E1D96A /* Assets.xcassets in Resources */,
 				A41656CF1E704C4B00BC2077 /* login-.png in Resources */,
 				A41D8CEC1E826F7C00C18BFA /* Message .png in Resources */,
@@ -421,6 +454,8 @@
 				A41D8CFB1E82B96700C18BFA /* down.png in Resources */,
 				A4CE47801E7FBF5100CCE586 /* Arrow-104.png in Resources */,
 				A41D8CDC1E82672400C18BFA /* Book.png in Resources */,
+				7C3415CB1E8A6BD900CE9203 /* lOGOUT.jpeg in Resources */,
+				7C23142C1E8AB1DE00D4CEA8 /* Select.png in Resources */,
 				A4CE47821E7FCEC600CCE586 /* MenuButton.png in Resources */,
 				A42588E41E7588A400E26F9C /* Plus-26.png in Resources */,
 			);
@@ -448,18 +483,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4CE47841E7FCF5B00CCE586 /* ManageTeacher_ViewController.swift in Sources */,
+				7C1D87651E8BEC760037144A /* FloatRatingView.swift in Sources */,
 				A4CE477A1E7FBA8800CCE586 /* SplashPageViewController.swift in Sources */,
 				A4CE478A1E7FD2A300CCE586 /* menuPageViewController.swift in Sources */,
 				A41DFB741E6FD6400055B2C4 /* EZLoadingActivity.swift in Sources */,
 				A41CB9801E6E7ED300E1D96A /* AppDelegate.swift in Sources */,
 				A41D8CF61E82A85200C18BFA /* AttendanceReport_ViewController.swift in Sources */,
+				7C1D87611E8BA23B0037144A /* Parent_Transport_ViewController.swift in Sources */,
 				A42588DA1E756BE000E26F9C /* AddmissionFormViewController.swift in Sources */,
 				A41656CB1E70409800BC2077 /* Reach.swift in Sources */,
 				A4B201771E864C2F009F959A /* AdmissionForm_ViewController.swift in Sources */,
 				A4CE477C1E7FBBA100CCE586 /* NotificationViewController.swift in Sources */,
 				A41EC0141E740D7F00C8FBB6 /* SAHREDViewController.swift in Sources */,
+				7C3415C51E8A32CA00CE9203 /* BusDriver_DashboardViewController.swift in Sources */,
+				7C1D87631E8BD7B10037144A /* Feedback_ViewController.swift in Sources */,
 				A41CB9B41E6EE3F800E1D96A /* DashboardViewController.swift in Sources */,
 				A41CB9B01E6EA50600E1D96A /* RegisterViewController.swift in Sources */,
+				7C3415C71E8A397E00CE9203 /* BusDriver_Attendance_ViewController.swift in Sources */,
 				A42D0C7D1E8104B000A7EC7D /* Expansion_TableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -621,7 +661,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = AvantGarde/AvantGarde.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Virendra Maloo (N2DRC7UTFV)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Virendra Maloo (Z864CL5234)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = N2DRC7UTFV;
 				INFOPLIST_FILE = AvantGarde/Info.plist;
@@ -641,7 +681,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = AvantGarde/AvantGarde.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Virendra Maloo (N2DRC7UTFV)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Virendra Maloo (Z864CL5234)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = N2DRC7UTFV;
 				INFOPLIST_FILE = AvantGarde/Info.plist;

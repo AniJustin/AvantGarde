@@ -194,5 +194,10 @@ class AttendanceReport_ViewController: UIViewController,UITableViewDelegate,UITa
     }
 
  
+    @IBAction func BackButton(_ sender: Any) {
+        
+        let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "DashboardViewController") as! DashboardViewController
+        self.navigationController?.pushViewController(secondViewController, animated: false)
+    }
     
    }

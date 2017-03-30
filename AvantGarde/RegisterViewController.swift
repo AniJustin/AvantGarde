@@ -172,9 +172,11 @@ var kbHeight: CGFloat!
                 if self.username == "success"
                 {
                     print("ok log in")
-                    
+                    if UserType == "parent"
+                    {
                     let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "DashboardViewController") as! DashboardViewController
                     self.navigationController?.pushViewController(secondViewController, animated: true)
+                    }
                 }
             })
         }

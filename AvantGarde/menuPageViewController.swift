@@ -12,8 +12,8 @@ class menuPageViewController: UIViewController,UITableViewDataSource,UITableView
   var arrayForBool = NSMutableArray()
     @IBOutlet weak var MenuTableView: UITableView!
      var sectionvaluepass : Int!
-    var GetActiveCategories_array = ["Dashboard","Teachers","Admission Form","Fees Structure","Attendance","Progress Report","Class Routine","Exam","Transport","Noticeboard","Message","Account","Feedback","Forums & Blogs"]
-        var name_array = ["Jude","Oliver"]
+    var GetActiveCategories_array = ["Dashboard","Teachers","Admission Form","Academic Syllabus","Class Routine","Exam Marks","Attendance Report","Progress Report","Payment","Library","Transport","Noticeboard","Message","Logout"]
+      //  var name_array = ["Jude","Oliver"]
     
     var previousSelectedIndex: Int!
 
@@ -56,7 +56,7 @@ initialization()
       //  return 5
         if Bool(arrayForBool[section] as! NSNumber)
         {
-            return name_array.count
+            return studentDataArr.count
         }
         else
         {
@@ -67,21 +67,37 @@ initialization()
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         
-//        if indexPath.row == 0 {
-//            cell.textLabel?.text = "Dashboard"
-//        }
-        if indexPath.section != 0
+
+        if indexPath.section != 0 && indexPath.section != 1
         {
-          cell.textLabel?.text = "          \(name_array[indexPath.row])"
+            
+
+let name = studentDataArr[indexPath.row] as! NSDictionary
+          cell.textLabel?.text = "          \(name["name"]!)"
+           // cell.imageView?.image = UIImage(named: "avatar.png")
         }
         cell.textLabel?.textColor = UIColor.white
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.section == 0 {
-            
-            let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "DashboardViewController") as! DashboardViewController
+//        if indexPath.section == 0 {
+//            
+//            let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "DashboardViewController") as! DashboardViewController
+//            self.navigationController?.pushViewController(secondViewController, animated: false)
+//        }
+        if sectionvaluepass == 2
+        {
+               studentData_firstStudent = studentDataArr[indexPath.row] as! NSDictionary
+               studentData_firstStudentid = studentData_firstStudent["student_id"] as! String
+            let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "AdmissionForm_ViewController") as! AdmissionForm_ViewController
+    self.navigationController?.pushViewController(secondViewController, animated: false)
+        }
+        else if sectionvaluepass == 6
+        {
+            studentData_firstStudent = studentDataArr[indexPath.row] as! NSDictionary
+            studentData_firstStudentid = studentData_firstStudent["student_id"] as! String
+            let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "AttendanceReport_ViewController") as! AttendanceReport_ViewController
             self.navigationController?.pushViewController(secondViewController, animated: false)
         }
     }
@@ -100,16 +116,16 @@ initialization()
         viewLabel.text = "   \(GetActiveCategories_array[section])"
         
         sectionView.addSubview(viewLabel)
-        let imgView: UIImageView = UIImageView(image: UIImage(named: "left-arrow-144-X-144"))
-        imgView.frame = CGRect(x: MenuTableView.frame.size.width - 30, y: 10, width: 25, height: 25)
-        sectionView.addSubview(imgView)
-        if section != 0
-        {
+//        let imgView: UIImageView = UIImageView(image: UIImage(named: "avatar.png"))
+//        imgView.frame = CGRect(x: 10, y: 10, width: 25, height: 25)
+//        sectionView.addSubview(imgView)
+       
         let headerTapped: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action:#selector(sectionHeaderTapped(_:)))
         sectionvaluepass = Int(section)
         sectionView.addGestureRecognizer(headerTapped)
         sectionView.backgroundColor = UIColor.black
-        }
+        
+       
         
         return sectionView
         
@@ -126,7 +142,22 @@ initialization()
             sectionvaluepass = 0
         }
         //    self.GetActiveSubCategories_array
+        if sectionvaluepass == 0
+        {
         
+            let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "DashboardViewController") as! DashboardViewController
+            self.navigationController?.pushViewController(secondViewController, animated: false)
+        
+        
+        }
+        if sectionvaluepass == 1
+        {
+            
+            let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "ManageTeacher_ViewController") as! ManageTeacher_ViewController
+            self.navigationController?.pushViewController(secondViewController, animated: false)
+            
+            
+        }
         let indexPath: IndexPath = IndexPath(row: 0, section: gestureRecognizer.view!.tag)
         MenuTableView.beginUpdates()
         if indexPath.row == 0
@@ -161,6 +192,8 @@ initialization()
             MenuTableView.reloadSections(sectionToReload, with: .automatic)
             
             
+            
+        
         }
         
         previousSelectedIndex = indexPath.section

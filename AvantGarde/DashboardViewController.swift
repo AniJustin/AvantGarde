@@ -10,40 +10,44 @@ import UIKit
 var UserId : String!
 var UserType : String!
 var addArray : Array<Any>!
-
-
-class DashboardViewController: UIViewController, UIWebViewDelegate, UIScrollViewDelegate {
+var studentDataArr : Array<Any>!
+var studentData_firstStudent : NSDictionary!
+var studentData_firstStudentid : String!
+ //var studentDetails_Arr : NSDictionary!
+class DashboardViewController: UIViewController {
     
+    @IBOutlet weak var LogOut_Reference_Button: UIButton!
     
 
 
     @IBOutlet weak var DashBoardCollectionView: UICollectionView!
-    var HomePage_ArrayList = ["Teachers","Admission Form","Fees Structure","Attendance","Progress Report","Class Routine","Exam","Transport","Noticeboard","Message","Account","Feedback","Forums & Blogs"]
-     var DashBoard_ImageArray = ["Gender.png","Checked.png","Downloading.png","Area.png","Book.png","Clock.png","Check Book.png","Bus.png","noticeboard.png","Message .png","Password.png","Soccer.png","Speech .png"]
+    var HomePage_ArrayList = ["Teachers","Attendance","Progress Report","PTM","Exam","ProgrssCard","Student Fees","Feedback"]
+     var DashBoard_ImageArray = ["Gender.png","Area.png","Book.png","Clock.png","Check Book.png","noticeboard.png","Message .png","Soccer.png"]
     
-    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+  //  @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var NotificationButton_Reference: UIButton!
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
 
-        
-//webServiceCalling()
-        webServiceCalling1()
+        webServiceCalling_GetChild()
 
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated) // No need for semicolon
         
-        activityIndicator.isHidden = false
-        activityIndicator.startAnimating()
+    
         
+    
         
-        activityIndicator.stopAnimating()
-        activityIndicator.isHidden = true
+//        activityIndicator.isHidden = false
+//        activityIndicator.startAnimating()
+//        
+//        
+//        activityIndicator.stopAnimating()
+//        activityIndicator.isHidden = true
     }
     
     // MARK: - UICollectionViewDataSource protocol
@@ -193,7 +197,6 @@ class DashboardViewController: UIViewController, UIWebViewDelegate, UIScrollView
         }
        
 
-//cell.contentView.backgroundColor = getRandomColor()
         
         return cell
     }
@@ -202,36 +205,38 @@ class DashboardViewController: UIViewController, UIWebViewDelegate, UIScrollView
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: IndexPath) {
         if indexPath.row == 0 {
-      //   ManageTeacher_ViewController.webServiceCalling()
         let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "ManageTeacher_ViewController") as! ManageTeacher_ViewController
         self.navigationController?.pushViewController(secondViewController, animated: true)
-        print(indexPath.row)
+     
         }
         if indexPath.row == 1 {
-            //   ManageTeacher_ViewController.webServiceCalling()
-            let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "AdmissionForm_ViewController") as! AdmissionForm_ViewController
-            self.navigationController?.pushViewController(secondViewController, animated: true)
-            print(indexPath.row)
+//            let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "AdmissionForm_ViewController") as! AdmissionForm_ViewController
+//            self.navigationController?.pushViewController(secondViewController, animated: true)
+         
         }
         if indexPath.row == 3 {
-            //   ManageTeacher_ViewController.webServiceCalling()
             let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "AttendanceReport_ViewController") as! AttendanceReport_ViewController
             self.navigationController?.pushViewController(secondViewController, animated: true)
-            print(indexPath.row)
+            
+        }
+        if indexPath.row == 4{
+            let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "BusDriver_DashboardViewController") as! BusDriver_DashboardViewController
+            self.navigationController?.pushViewController(secondViewController, animated: true)
+          
+        }
+        if indexPath.row == 7{
+            let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "Parent_Transport_ViewController") as! Parent_Transport_ViewController
+            self.navigationController?.pushViewController(secondViewController, animated: true)
+          
+        }
+        if indexPath.row == 11{
+            let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "Feedback_ViewController") as! Feedback_ViewController
+            self.navigationController?.pushViewController(secondViewController, animated: true)
+           
         }
     }
   
-  /*  func getRandomColor() -> UIColor{
-        
-            let randomRed:CGFloat = CGFloat(drand48())
-        
-              let randomGreen:CGFloat = CGFloat(drand48())
-        
-                let randomBlue:CGFloat = CGFloat(drand48())
-        
-                return UIColor(red: randomRed, green: randomGreen, blue: randomBlue, alpha: 1.0)
-        
-            }*/
+
   
     func UIColorFromRGB(_ rgbValue: UInt) -> UIColor {
         return UIColor(
@@ -240,6 +245,10 @@ class DashboardViewController: UIViewController, UIWebViewDelegate, UIScrollView
             blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
             alpha: CGFloat(1.0)
         )
+    }
+    @IBAction func LogOut_Action(_ sender: Any) {
+        let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "RegisterViewController") as! RegisterViewController
+        self.navigationController?.pushViewController(secondViewController, animated: false)
     }
    
     override func didReceiveMemoryWarning() {
@@ -264,7 +273,7 @@ class DashboardViewController: UIViewController, UIWebViewDelegate, UIScrollView
     
     
  
-    func  webServiceCalling1()
+    func  webServiceCalling_GetChild()
     {
      
         var request = URLRequest(url: URL(string: "http://52.29.203.220/demo/index.php/?parent_api/my_cheild/")!)
@@ -294,14 +303,19 @@ class DashboardViewController: UIViewController, UIWebViewDelegate, UIScrollView
            print(dict!)
             
             
-            if dict?.index(forKey: "enquiredStudentDataArr") != nil {
-                let studentDataArr = dict?["enquiredStudentDataArr"] as! NSArray
-                let name = studentDataArr[0] as! NSDictionary
-              //  let name1 = name["name"] as NSArray
-                // the key exists in the dictionary
-                print(name)
-               let name1 = name["name"]
-                print(name1!)
+            if dict?.index(forKey: "studentDataArr") != nil {
+               studentDataArr = dict?["studentDataArr"] as! Array
+                if studentDataArr.count != 0
+                {
+                    studentData_firstStudent = studentDataArr[0] as! NSDictionary
+                    studentData_firstStudentid = studentData_firstStudent["student_id"] as! String
+                }
+                
+//                let name = studentDataArr[0] as! NSDictionary
+//           
+//                print(name)
+//               let name1 = name["name"]
+//                print(name1!)
             }
   }
         task.resume()
@@ -331,4 +345,5 @@ class DashboardViewController: UIViewController, UIWebViewDelegate, UIScrollView
         //   }
     }
 
+   
 }
